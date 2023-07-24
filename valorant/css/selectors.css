@@ -1,0 +1,71 @@
+/* element selector */
+p,a{
+    color:brown;
+}
+
+li{
+    list-style:upper-latin;
+}
+
+/* style selector */
+.special{
+    color: orange;
+    font-weight: bold;
+}
+/* element of style selector */
+span.special{
+    color: crimson;
+    font-weight:bolder;
+}
+
+/*descendent combinator or
+ element of an element */
+li em{
+    color: rebeccapurple;
+}
+
+/* Adjacent combinators */
+
+h1+p{
+    color: chocolate;
+    font-size:xx-large;
+}
+
+/* psuedo-class selector */
+a:hover{
+    color: rgb(204, 19, 19);/* removes the color when hovered */
+    text-decoration: none; /* removes the underline when hovered */
+}
+
+body h1+p .special{
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+} /* selects on the special of this address */
+
+/* Id selector */
+#heading{
+    color: red;
+    background-color: aqua;
+    padding: 10px;
+}
+
+p#two{
+    color: purple;
+    background-color: cornflowerblue;
+    padding: 3px;
+}
+
+/* attribute elector */
+li[class]{
+    font-size: 300%;
+}
+
+li[class="a"]{
+    color:royalblue
+}
+
+li[class~="a"]{
+    color: chartreuse;
+}
+
